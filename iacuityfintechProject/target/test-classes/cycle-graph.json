@@ -1,0 +1,10 @@
+{
+  "nodes": [
+    { "id": "C1", "parentId": "C3", "name": "Cycle A", "accountNumber": "ACC-C1", "transactions": [] },
+    { "id": "C2", "parentId": "C1", "name": "Cycle B", "accountNumber": "ACC-C2", "transactions": [] },
+    { "id": "C3", "parentId": "C2", "name": "Cycle C", "accountNumber": "ACC-C3", "transactions": [] },
+    { "id": "C4", "parentId": "C3", "name": "Hangs off the cycle", "accountNumber": "ACC-C4", "transactions": [] },
+    { "id": "S1", "parentId": "S1", "name": "Self parent", "accountNumber": "ACC-S1", "transactions": [] },
+    { "id": "R1", "parentId": null, "name": "Healthy root", "accountNumber": "ACC-R1", "transactions": [] }
+  ]
+}
